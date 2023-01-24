@@ -13,3 +13,7 @@
 
 // When deleteBtn is clicked, delete single task 
 ///////////////////////////////////
+
+// Function - deleteAllBtn
+
+// When this btn is clicked, delete all list items on the page. 
