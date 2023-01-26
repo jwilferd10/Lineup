@@ -4,8 +4,10 @@
 // When the textField submit button is clicked
 $("#addTask").click(function(event) {
     event.preventDefault();
-    alert("I've been clicked");
-    console.log("I've been clicked");
+
+    // collect val from text area
+    let userText = $("#userInput").val();
+    console.log(userText);
 })
 
 // .val of textField dynamically generated in htmlEl
