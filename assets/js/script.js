@@ -6,8 +6,19 @@ $("#addTask").click(function(event) {
     event.preventDefault();
 
     // collect val from text area
-    let userText = $("#userInput").val();
+    let userText = $("#userInput").val().trim();
     console.log(userText);
+
+    // if userText exists 
+    if (userText) {
+        // run html generation script
+        // createTaskEl();
+        
+        // reset the form 
+        userInput.value = "";
+    } else {
+        window.alert("You need to type something down");
+    }
 })
 
 // .val of textField dynamically generated in htmlEl
