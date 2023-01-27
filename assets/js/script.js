@@ -12,24 +12,32 @@ $("#addTask").click(function(event) {
     // if userText exists 
     if (userText) {
         // run html generation script
-        createTaskEl();
+        createTaskEl(userText);
         
         // reset the form 
         userInput.value = "";
     } else {
         window.alert("You need to type something down");
     }
-})
+});
 
 // .val of textField dynamically generated in htmlEl
-let createTaskEl = function() {
-    // Create new div container for html element
-    // Add class to containerEl
+let createTaskEl = function(userText) {
+    
+    alert(userText)
+    
+    //  <li> container to hold the user task
+    let taskContainerEl = $("<li>").addClass("taskItem");
 
-    // inside create a <p> element that contains userText.val();
-    // Add class to <p> element 
+    // inside create a <span> element that contains userText.val();
+    let taskTextEl = $("<span>").text(userText).addClass("taskText");
 
-}
+    // append taskTextEl to taskContainerEl
+    taskContainerEl.append(taskTextEl);
+
+    $("#taskList").append(taskContainerEl);
+
+};
 
 
 
