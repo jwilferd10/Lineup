@@ -12,7 +12,7 @@ $("#addTask").click(function(event) {
     // if userText exists 
     if (userText) {
         // run html generation script
-        // createTaskEl();
+        createTaskEl();
         
         // reset the form 
         userInput.value = "";
@@ -22,6 +22,17 @@ $("#addTask").click(function(event) {
 })
 
 // .val of textField dynamically generated in htmlEl
+let createTaskEl = function() {
+    // Create new div container for html element
+    // Add class to containerEl
+
+    // inside create a <p> element that contains userText.val();
+    // Add class to <p> element 
+
+}
+
+
+
 
 // create a button that deletes the generated content.
 ///////////////////////////////////
