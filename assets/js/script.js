@@ -7,7 +7,6 @@ $("#addTask").click(function(event) {
 
     // collect val from text area
     let userText = $("#userInput").val().trim();
-    console.log(userText);
 
     // if userText exists 
     if (userText) {
@@ -16,39 +15,45 @@ $("#addTask").click(function(event) {
         
         // reset the form 
         userInput.value = "";
-    } else {
+    } else if (userText === "") {
         window.alert("You need to type something down");
     }
 });
 
 // .val of textField dynamically generated in htmlEl
-let createTaskEl = function(userText) {
-    
-    alert(userText)
-    
+let createTaskEl = function(userText) {    
     //  <li> container to hold the user task
-    let taskContainerEl = $("<li>").addClass("taskItem");
+    let taskContainerEl = $("<ul>").addClass("taskItem d-flex flex-row");
+
+    // delete this task btn
+    let deleteBtn = $("<button>").addClass("btn btn-primary pr-2")
 
     // inside create a <span> element that contains userText.val();
-    let taskTextEl = $("<span>").text(userText).addClass("taskText");
+    let taskTextEl = $("<span>").text(userText).addClass("taskText border");
 
     // append taskTextEl to taskContainerEl
-    taskContainerEl.append(taskTextEl);
+    taskContainerEl.append(deleteBtn, taskTextEl);
 
     $("#taskList").append(taskContainerEl);
 
+    // add for loop to provide each taskItem with an ID 
+
 };
 
-
-
+///////////////////////////////////
 
 // create a button that deletes the generated content.
+let deleteTask = function(createTaskEl) {
+
+    // add event listener for the button 
+    
+    // read the ID from createTaskEl
+    
+    // delete task based on that ID
+
+}
 ///////////////////////////////////
 
-///////////////////////////////////
-// Function - deleteEntry 
-
-// When deleteBtn is clicked, delete single task 
 ///////////////////////////////////
 
 // Function - deleteAllBtn
