@@ -26,7 +26,7 @@ let createTaskEl = function(userText) {
     let taskContainerEl = $("<ul>").addClass("taskItem d-flex flex-row");
 
     // delete this task btn
-    let deleteBtn = $("<button>").addClass("btn btn-primary pr-2")
+    let deleteBtn = $("<button>").addClass("deleteBtn btn btn-primary pr-2");
 
     // inside create a <span> element that contains userText.val();
     let taskTextEl = $("<span>").text(userText).addClass("taskText border");
@@ -42,16 +42,16 @@ let createTaskEl = function(userText) {
 
 ///////////////////////////////////
 
-// create a button that deletes the generated content.
-let deleteTask = function(createTaskEl) {
+// add event listener for the button 
+$("#deleteBtn").each(function(createTaskEl) {
 
-    // add event listener for the button 
     
-    // read the ID from createTaskEl
     
+    
+    // let removeHTML = $(this).remove("<ul>");
     // delete task based on that ID
 
-}
+});
 ///////////////////////////////////
 
 ///////////////////////////////////
