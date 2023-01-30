@@ -1,5 +1,12 @@
 // create empty array for localStorage
 
+// render the tasks from LocalStorage
+
+// consider renaming 'tasks' to 'to-do' 
+
+// create an empty object to store the tasks
+const tasks = {};
+
 ///////////////////////////////////
 // When the textField submit button is clicked
 $("#addTask").click(function(event) {
@@ -36,7 +43,7 @@ let createTaskEl = function(userText) {
 
     $("#taskList").append(taskContainerEl);
 
-    // add for loop to provide each taskItem with an ID 
+    // ponentially add a for loop to add an ID 
 
 };
 
@@ -45,9 +52,6 @@ let createTaskEl = function(userText) {
 // add event listener for the button 
 $("#deleteBtn").each(function(createTaskEl) {
 
-    
-    
-    
     // let removeHTML = $(this).remove("<ul>");
     // delete task based on that ID
 
@@ -59,3 +63,5 @@ $("#deleteBtn").each(function(createTaskEl) {
 // Function - deleteAllBtn
 
 // When this btn is clicked, delete all list items on the page. 
+
+// Clear the tasks object
