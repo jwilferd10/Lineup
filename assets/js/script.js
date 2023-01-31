@@ -44,7 +44,10 @@ let createTaskEl = function(userText) {
     $("#taskList").append(taskContainerEl);
 
     // ponentially add a for loop to add an ID 
-
+    // for (let index = 0; index < array.length; index++) {
+    //     const element = array[index];
+        
+    // }
 };
 
 ///////////////////////////////////
@@ -55,6 +58,7 @@ $("#deleteBtn").each(function(createTaskEl) {
     // let removeHTML = $(this).remove("<ul>");
     // delete task based on that ID
 
+    // add a console.log to pickup the interaction
 });
 ///////////////////////////////////
 

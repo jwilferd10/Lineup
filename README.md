@@ -21,6 +21,7 @@
 
 ## :wave: Description: 
 <p> 
+Lineup is currently a simple yet working to-do list!
 </p>
   
 ## :book: User Story:
