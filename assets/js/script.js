@@ -4,8 +4,8 @@
 
 // consider renaming 'tasks' to 'to-do' 
 
-// create an empty object to store the tasks
-const tasks = {};
+// create an empty array to store the tasks
+const tasks = [];
 
 ///////////////////////////////////
 // When the textField submit button is clicked
@@ -43,11 +43,9 @@ let createTaskEl = function(userText) {
 
     $("#taskList").append(taskContainerEl);
 
-    // ponentially add a for loop to add an ID 
-    // for (let index = 0; index < array.length; index++) {
-    //     const element = array[index];
-        
-    // }
+    // increase the id # for next object
+    // something++
+
 };
 
 ///////////////////////////////////
@@ -55,6 +53,7 @@ let createTaskEl = function(userText) {
 // add event listener for the button 
 $("#deleteBtn").each(function(createTaskEl) {
 
+    // $(this).remove("<ul>");
     // let removeHTML = $(this).remove("<ul>");
     // delete task based on that ID
 
