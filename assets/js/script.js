@@ -17,8 +17,14 @@ $("#addTask").click(function(event) {
 
     // if userText exists 
     if (userText) {
+
+        // create an object
+        let taskObj = {
+            text: userText
+        };
+
         // run html generation script
-        createTaskEl(userText);
+        createTaskEl(taskObj);
         
         // reset the form 
         userInput.value = "";
@@ -28,7 +34,7 @@ $("#addTask").click(function(event) {
 });
 
 // .val of textField dynamically generated in htmlEl
-let createTaskEl = function(userText) {    
+let createTaskEl = function(taskObj) {    
     //  <li> container to hold the user task
     let taskContainerEl = $("<ul>").addClass("taskItem d-flex flex-row");
 
@@ -36,7 +42,7 @@ let createTaskEl = function(userText) {
     let deleteBtn = $("<button>").addClass("deleteBtn btn btn-primary pr-2");
 
     // inside create a <span> element that contains userText.val();
-    let taskTextEl = $("<span>").text(userText).addClass("taskText border");
+    let taskTextEl = $("<span>").text(taskObj.text).addClass("taskText border");
 
     // append taskTextEl to taskContainerEl
     taskContainerEl.append(deleteBtn, taskTextEl);
