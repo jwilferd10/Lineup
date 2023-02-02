@@ -1,11 +1,5 @@
-// create empty array for localStorage
-
-// render the tasks from LocalStorage
-
-// consider renaming 'tasks' to 'to-do' 
-
-// create an empty array to store the tasks
-const tasks = [];
+let taskIdCounter = 0;
+let tasks = [];
 
 ///////////////////////////////////
 // When the textField submit button is clicked
@@ -38,6 +32,10 @@ let createTaskEl = function(taskObj) {
     //  <li> container to hold the user task
     let taskContainerEl = $("<ul>").addClass("taskItem d-flex flex-row");
 
+    // instead of connecting to UL straight, create a li item wrapper and pass setAttribute into it
+    // add an id to element
+    // taskContainerEl.setAttribute("taskID", taskIdCounter);
+
     // delete this task btn
     let deleteBtn = $("<button>").addClass("deleteBtn btn btn-primary pr-2");
 
@@ -49,8 +47,14 @@ let createTaskEl = function(taskObj) {
 
     $("#taskList").append(taskContainerEl);
 
-    // increase the id # for next object
-    // something++
+    // set parameter for taskObj
+    taskObj.id = taskIdCounter;
+
+    // push into the array
+    tasks.push(taskObj);
+
+    // increase counter for the next element
+    taskIdCounter++;
 
 };
 
