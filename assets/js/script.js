@@ -32,9 +32,8 @@ let createTaskEl = function(taskObj) {
     //  <li> container to hold the user task
     let taskContainerEl = $("<ul>").addClass("taskItem d-flex flex-row");
 
-    // instead of connecting to UL straight, create a li item wrapper and pass setAttribute into it
     // add an id to element
-    // taskContainerEl.setAttribute("taskID", taskIdCounter);
+    taskContainerEl.attr("taskID", taskIdCounter);
 
     // delete this task btn
     let deleteBtn = $("<button>").addClass("deleteBtn btn btn-primary pr-2");
@@ -55,6 +54,9 @@ let createTaskEl = function(taskObj) {
 
     // increase counter for the next element
     taskIdCounter++;
+
+    // check to see if taskObj displays correctly in the array
+    console.log(tasks);
 
 };
 
