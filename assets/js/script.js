@@ -57,20 +57,37 @@ let createTaskEl = function(taskObj) {
 
     // check to see if taskObj displays correctly in the array
     console.log(tasks);
-
 };
 
 ///////////////////////////////////
 
+$(document).on('click', '.deleteBtn', function(event) {
+    alert("I've been clicked")
+    console.log("I've been clicked")
+    // let deleteID = $(this).attr("taskID");
+})
+
+// $(".deleteBtn").each(function(createTaskEl, taskObj) {
+//     $(this).on("click", function() {
+//         console.log(taskObj);
+//     })
+// });
+
+
 // add event listener for the button 
-$("#deleteBtn").each(function(createTaskEl) {
+// $("#deleteBtn").each(function(taskObj, createTaskEl) {
+
+// });
 
     // $(this).remove("<ul>");
     // let removeHTML = $(this).remove("<ul>");
     // delete task based on that ID
 
     // add a console.log to pickup the interaction
-});
+
+
+
+
 ///////////////////////////////////
 
 ///////////////////////////////////
