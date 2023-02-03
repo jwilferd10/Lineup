@@ -61,34 +61,19 @@ let createTaskEl = function(taskObj) {
 
 ///////////////////////////////////
 
-$(document).on('click', '.deleteBtn', function(createTaskEl) {
+$(document).on('click', '.deleteBtn', function(taskObj) {
 
-    // let deleteID = $("<ul>").attr("taskID");
-    let deleteID = $(this).parent("ul").attr("taskID")
-    console.log(deleteID);
+    // find and delete html elemenet 
+    $(this).parent("ul").remove().attr("taskID");
+    
+    // check the ID
+    // console.log(deleteID);
 
+    // currently only the HTML is being removed onclick, need to think of a way that deletes the ID from the array next.
+    console.log(tasks);
+    
+    // update the array 
 })
-
-// $(".deleteBtn").each(function(createTaskEl, taskObj) {
-//     $(this).on("click", function() {
-//         console.log(taskObj);
-//     })
-// });
-
-
-// add event listener for the button 
-// $("#deleteBtn").each(function(taskObj, createTaskEl) {
-
-// });
-
-    // $(this).remove("<ul>");
-    // let removeHTML = $(this).remove("<ul>");
-    // delete task based on that ID
-
-    // add a console.log to pickup the interaction
-
-
-
 
 ///////////////////////////////////
 
@@ -96,6 +81,8 @@ $(document).on('click', '.deleteBtn', function(createTaskEl) {
 
 // Function - deleteAllBtn
 
-// When this btn is clicked, delete all list items on the page. 
+    // When this btn is clicked, delete all list items on the page. 
 
-// Clear the tasks object
+    // Clear the tasks object
+    
+///////////////////////////////////
