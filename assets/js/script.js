@@ -61,10 +61,12 @@ let createTaskEl = function(taskObj) {
 
 ///////////////////////////////////
 
-$(document).on('click', '.deleteBtn', function(event) {
-    alert("I've been clicked")
-    console.log("I've been clicked")
-    // let deleteID = $(this).attr("taskID");
+$(document).on('click', '.deleteBtn', function(createTaskEl) {
+
+    // let deleteID = $("<ul>").attr("taskID");
+    let deleteID = $(this).parent("ul").attr("taskID")
+    console.log(deleteID);
+
 })
 
 // $(".deleteBtn").each(function(createTaskEl, taskObj) {
