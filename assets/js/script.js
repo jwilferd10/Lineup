@@ -64,7 +64,9 @@ let createTaskEl = function(taskObj) {
 $(document).on('click', '.deleteBtn', function(taskObj) {
 
     // find and delete html elemenet 
-    $(this).parent("ul").remove().attr("taskID");
+    let deleteEl = $(this).parent("ul").remove().attr("taskID");
+
+    tasks.splice(deleteEl);
     
     // check the ID
     // console.log(deleteID);
