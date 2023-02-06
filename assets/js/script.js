@@ -92,9 +92,11 @@ $(document).on('click', '.deleteBtn', function(taskObj) {
 ///////////////////////////////////
 
 // Function - deleteAllBtn
+$("#delAllTasks").click(function(event) {
+    // Clear the tasks array
+    tasks = [];
 
-    // When this btn is clicked, delete all list items on the page. 
-
-    // Clear the tasks object
-    
+    // alert user
+    window.alert("All tasks have been deleted!");
+})  
 ///////////////////////////////////
