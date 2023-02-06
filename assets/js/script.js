@@ -76,7 +76,7 @@ $(document).on('click', '.deleteBtn', function(taskObj) {
 
     // for (let i = 0; i < tasks.length; i++) {
 
-    //     if (tasks[i].id !== taskObj.id) {
+    //     if (tasks[i].id !== parseInt("taskID")) {
     //         newTaskArr.push(tasks[i]);
     //     }
     // }
@@ -84,7 +84,7 @@ $(document).on('click', '.deleteBtn', function(taskObj) {
     // // connect the global arr to new arr 
     // tasks = newTaskArr;
 
-    console.log(tasks);
+    // console.log(tasks);
 })
 
 ///////////////////////////////////
