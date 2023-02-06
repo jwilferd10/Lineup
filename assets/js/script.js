@@ -66,15 +66,25 @@ $(document).on('click', '.deleteBtn', function(taskObj) {
     // find and delete html elemenet 
     let deleteEl = $(this).parent("ul").remove().attr("taskID");
 
-    tasks.splice(deleteEl);
+    tasks.splice(deleteEl, 1);
     
-    // check the ID
-    // console.log(deleteID);
-
     // currently only the HTML is being removed onclick, need to think of a way that deletes the ID from the array next.
-    console.log(tasks);
+    // console.log(tasks);
     
-    // update the array 
+    // new array to hold the updated list
+    // let newTaskArr = [];
+
+    // for (let i = 0; i < tasks.length; i++) {
+
+    //     if (tasks[i].id !== taskObj.id) {
+    //         newTaskArr.push(tasks[i]);
+    //     }
+    // }
+
+    // // connect the global arr to new arr 
+    // tasks = newTaskArr;
+
+    console.log(tasks);
 })
 
 ///////////////////////////////////
