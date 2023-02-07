@@ -12,11 +12,11 @@
     <body>
         
         <main class="container">
-            <section class="text-center container border rounded mt-3 pb-2">
+            <section class="text-center border rounded mt-3 p-2">
                 <!-- Header-->
-                <header>
+                <header class="pb-5">
                     <h1>Lineup</h1>
-                    <h2>An app to help you sort out your to-do list!</h2>
+                    <h4>Create your to-do list on the go!</h4>
                 </header>
 
                 <!-- To-Do List Form -->
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     <!-- buttons -->
-                    <div class="pt-2">
+                    <div class="pt-3">
                         <button type="submit" id="addTask" class="btn btn-primary mb-2">Add Task</button>
                         <button type="submit" id="delAllTasks" class="btn btn-warning mb-2">Delete All Tasks</button>
                     </div>
@@ -36,10 +36,13 @@
             </section>
 
             <!-- wrapper for ul -->
-            <section>
-                <ul id="taskList">
-                    <!-- generated list items here -->
-                </ul>
+            <section class="border rounded mt-3 p-3">
+                <div class="row justify-content-center">
+                    <h3 class="text-center">My To-Do List</h3>
+                    <ul id="taskList" class="col-5">
+                        <!-- generated list items here -->
+                    </ul>
+                </div>
             </section>
         </main>
 

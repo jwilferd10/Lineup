@@ -84,7 +84,7 @@ $(document).on('click', '.deleteBtn', function(taskObj) {
     // // connect the global arr to new arr 
     // tasks = newTaskArr;
 
-    // console.log(tasks);
+    console.log(tasks);
 })
 
 ///////////////////////////////////
