@@ -10,20 +10,23 @@
     </head>
 
     <body>
-        <!-- Header-->
-        <header>
-            <h1>Lineup</h1>
-            <h2>An app to help you sort out your to-do list!</h2>
-        </header>
         
         <main>
-            <!-- To-Do List Form -->
-            <form class="form-inline">
-                <input type="userInput" class="form-control" id="userInput" placeholder="Enter a task">
-                <button type="submit" id="addTask" class="btn btn-primary mb-2">Add Task</button>
-                <button type="submit" id="delAllTasks" class="btn btn-warning mb-2">Delete All Tasks</button>
-            </form>
+            <section>
+                <!-- Header-->
+                <header>
+                    <h1>Lineup</h1>
+                    <h2>An app to help you sort out your to-do list!</h2>
+                </header>
 
+                <!-- To-Do List Form -->
+                <form class="form-inline">
+                    <input type="userInput" class="form-control" id="userInput" placeholder="Enter a task">
+                    <button type="submit" id="addTask" class="btn btn-primary mb-2">Add Task</button>
+                    <button type="submit" id="delAllTasks" class="btn btn-warning mb-2">Delete All Tasks</button>
+                </form>
+            </section>
+            
             <!-- wrapper for ul -->
             <section>
                 <ul id="taskList">
@@ -31,11 +34,6 @@
                 </ul>
             </section>
         </main>
-
-        <!-- Footer -->
-        <footer>
-            <!-- Buttons will go here -->
-        </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="assets/js/script.js"></script>
