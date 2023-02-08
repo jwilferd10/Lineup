@@ -2,6 +2,19 @@ let taskIdCounter = 0;
 let tasks = [];
 
 ///////////////////////////////////
+// initializes when body is loaded 
+let timeInit = function() {
+    // get the current local time
+    let currentTime = new Date().toLocaleTimeString();
+
+    // timeDisplay previews currentTime data
+    $(".timeDisplay").html(currentTime);
+
+    // update every second
+    setTimeout(timeInit, 1000);
+}
+
+///////////////////////////////////
 // When the textField submit button is clicked
 $("#addTask").click(function(event) {
     event.preventDefault();
