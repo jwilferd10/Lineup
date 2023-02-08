@@ -7,6 +7,8 @@ let timeInit = function() {
     // get the current local time
     let currentTime = new Date().toLocaleTimeString();
 
+    // get current date
+    
     // timeDisplay previews currentTime data
     $(".timeDisplay").html(currentTime);
 
