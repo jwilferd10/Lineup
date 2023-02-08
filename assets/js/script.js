@@ -7,14 +7,19 @@ let timeInit = function() {
     // get the current local time
     let currentTime = new Date().toLocaleTimeString();
 
-    // get current date
-    
     // timeDisplay previews currentTime data
     $(".timeDisplay").html(currentTime);
 
     // update every second
     setTimeout(timeInit, 1000);
 }
+
+// collect and present the current date
+$(document).ready(function() {
+    // get the current date
+    let dateTest = new Date();
+    console.log(dateTest)
+})
 
 ///////////////////////////////////
 // When the textField submit button is clicked
