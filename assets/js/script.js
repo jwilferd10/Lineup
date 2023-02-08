@@ -14,11 +14,15 @@ let timeInit = function() {
     setTimeout(timeInit, 1000);
 }
 
+///////////////////////////////////
+
 // collect and present the current date
 $(document).ready(function() {
     // get the current date
-    let dateTest = new Date();
-    console.log(dateTest)
+    let currentDate = new Date().toDateString();
+
+    // display date
+    $(".dateDisplay").html(currentDate);
 })
 
 ///////////////////////////////////
