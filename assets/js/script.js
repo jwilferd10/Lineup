@@ -2,6 +2,7 @@ let taskIdCounter = 0;
 let tasks = [];
 
 ///////////////////////////////////
+
 // initializes when body is loaded 
 let timeInit = function() {
     // get the current local time
@@ -26,6 +27,7 @@ $(document).ready(function() {
 });
 
 ///////////////////////////////////
+
 // When the textField submit button is clicked
 $("#addTask").click(function(event) {
     event.preventDefault();
@@ -50,6 +52,8 @@ $("#addTask").click(function(event) {
         window.alert("You need to type something down");
     }
 });
+
+///////////////////////////////////
 
 // .val of textField dynamically generated in htmlEl
 let createTaskEl = function(taskObj) {    
@@ -87,12 +91,14 @@ let createTaskEl = function(taskObj) {
 };
 
 ///////////////////////////////////
+
 let saveTasks = function() {
     // store the created task in localStorage
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
 ///////////////////////////////////
+
 let loadTasks = function() {
     // retrieve the task from localStorage 
     let savedItem = localStorage.getItem("tasks");
@@ -127,8 +133,6 @@ $(document).on('click', '.deleteBtn', function(taskObj) {
     console.log(tasks);
     
 });
-
-///////////////////////////////////
 
 ///////////////////////////////////
 
