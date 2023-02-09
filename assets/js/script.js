@@ -12,7 +12,7 @@ let timeInit = function() {
 
     // update every second
     setTimeout(timeInit, 1000);
-}
+};
 
 ///////////////////////////////////
 
@@ -23,7 +23,7 @@ $(document).ready(function() {
 
     // display date
     $(".dateDisplay").html(currentDate);
-})
+});
 
 ///////////////////////////////////
 // When the textField submit button is clicked
@@ -121,10 +121,12 @@ $(document).on('click', '.deleteBtn', function(taskObj) {
     // deletes the task from the array 
     tasks.splice(deleteEl, 1);
 
-    // LOCALSTORAGE
+    // using setItem to set it again with new task arr
     localStorage.setItem('tasks', JSON.stringify(tasks));
+
+    console.log(tasks);
     
-})
+});
 
 ///////////////////////////////////
 
@@ -140,7 +142,7 @@ $("#delAllTasks").click(function(event) {
 
     // alert user
     window.alert("All tasks have been deleted!");
-})  
+}); 
 ///////////////////////////////////
 
 loadTasks();
