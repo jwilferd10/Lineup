@@ -94,6 +94,25 @@ let saveTasks = function() {
 }
 
 ///////////////////////////////////
+let loadTasks = function() {
+    // retrieve the task from localStorage 
+    let savedItem = localStorage.getItem("tasks");
+
+    if(!savedItem) {
+        return false;
+    } else {
+        // what does the log say? (insert old meme)
+        console.log("Those saved tasks? They've been found");
+        savedItem = JSON.parse(savedItem);
+    }
+
+    // run createTaskEl for every item saved to localStorage
+    for (let i = 0; i < savedItem.length; i++) {
+        createTaskEl(savedItem[i]);
+    }
+};
+
+///////////////////////////////////
 
 $(document).on('click', '.deleteBtn', function(taskObj) {
 
@@ -134,3 +153,5 @@ $("#delAllTasks").click(function(event) {
     window.alert("All tasks have been deleted!");
 })  
 ///////////////////////////////////
+
+loadTasks();
