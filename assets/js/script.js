@@ -149,6 +149,9 @@ $("#delAllTasks").click(function(event) {
     // Clear the tasks array
     tasks = [];
 
+    // clear the localStorage 
+    localStorage.clear();
+
     // alert user
     window.alert("All tasks have been deleted!");
 })  
