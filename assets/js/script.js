@@ -81,7 +81,17 @@ let createTaskEl = function(taskObj) {
 
     // check to see if taskObj displays correctly in the array
     console.log(tasks);
+
+    // save to localStorage
+    saveTasks();
 };
+
+///////////////////////////////////
+let saveTasks = function() {
+    // store the created task in localStorage
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+    console.log("YO YO YO ITS SAVED YO")
+}
 
 ///////////////////////////////////
 
