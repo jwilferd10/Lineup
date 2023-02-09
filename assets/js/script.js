@@ -146,25 +146,3 @@ $("#delAllTasks").click(function(event) {
 ///////////////////////////////////
 
 loadTasks();
-
-
-
-// NOTES
-
-    // currently only the HTML is being removed onclick, need to think of a way that deletes the ID from the array next.
-    // console.log(tasks);
-    
-    // new array to hold the updated list
-    // let newTaskArr = [];
-
-    // for (let i = 0; i < tasks.length; i++) {
-
-    //     if (tasks[i].id !== parseInt(taskObj.id)) {
-    //         newTaskArr.push(tasks[i]);
-    //     }
-    // }
-
-    // // connect the global arr to new arr 
-    // tasks = newTaskArr;
-
-    // console.log(tasks);
