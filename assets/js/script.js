@@ -80,7 +80,7 @@ let createTaskEl = function(taskObj) {
     taskIdCounter++;
 
     // check to see if taskObj displays correctly in the array
-    console.log(tasks);
+    // console.log(tasks);
 
     // save to localStorage
     saveTasks();
@@ -90,7 +90,6 @@ let createTaskEl = function(taskObj) {
 let saveTasks = function() {
     // store the created task in localStorage
     localStorage.setItem("tasks", JSON.stringify(tasks));
-    console.log("YO YO YO ITS SAVED YO")
 }
 
 ///////////////////////////////////
@@ -120,6 +119,8 @@ $(document).on('click', '.deleteBtn', function(taskObj) {
     let deleteEl = $(this).parent("ul").remove().attr("taskID");
 
     tasks.splice(deleteEl, 1);
+
+    localStorage.removeItem(deleteEl);
     
     // currently only the HTML is being removed onclick, need to think of a way that deletes the ID from the array next.
     // console.log(tasks);
@@ -129,7 +130,7 @@ $(document).on('click', '.deleteBtn', function(taskObj) {
 
     // for (let i = 0; i < tasks.length; i++) {
 
-    //     if (tasks[i].id !== parseInt("taskID")) {
+    //     if (tasks[i].id !== parseInt(taskObj.id)) {
     //         newTaskArr.push(tasks[i]);
     //     }
     // }
@@ -137,7 +138,7 @@ $(document).on('click', '.deleteBtn', function(taskObj) {
     // // connect the global arr to new arr 
     // tasks = newTaskArr;
 
-    console.log(tasks);
+    // console.log(tasks);
 })
 
 ///////////////////////////////////
