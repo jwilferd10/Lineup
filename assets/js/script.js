@@ -24,6 +24,8 @@ $(document).ready(function() {
 
     // display date
     $(".dateDisplay").html(currentDate);
+
+    // Potentially add comma after the days date before year
 });
 
 ///////////////////////////////////
