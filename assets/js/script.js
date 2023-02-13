@@ -85,9 +85,6 @@ let createTaskEl = function(taskObj) {
     // increase counter for the next element
     taskIdCounter++;
 
-    // check to see if taskObj displays correctly in the array
-    // console.log(tasks);
-
     // save to localStorage
     saveTasks();
 };
@@ -149,6 +146,7 @@ $("#delAllTasks").click(function(event) {
     // alert user
     window.alert("All tasks have been deleted!");
 }); 
+
 ///////////////////////////////////
 
 loadTasks();
