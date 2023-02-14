@@ -69,7 +69,7 @@ let createTaskEl = function(taskObj) {
     let deleteBtn = $("<button>").addClass("deleteBtn btn btn-primary pr-2");
 
     // inside create a <span> element that contains userText.val();
-    let taskTextEl = $("<span>").text(taskObj.text).addClass("taskText border col-10");
+    let taskTextEl = $("<span>").text(taskObj.text).addClass("taskText border border-dark col-10");
 
     // append taskTextEl to taskContainerEl
     taskContainerEl.append(deleteBtn, taskTextEl);

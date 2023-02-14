@@ -6,3 +6,7 @@ body {
 .taskItem {
     gap: 10px;
 }
+
+.taskText {
+    padding-left:4px;
+}
