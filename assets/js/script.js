@@ -60,7 +60,7 @@ $("#addTask").click(function(event) {
 // .val of textField dynamically generated in htmlEl
 let createTaskEl = function(taskObj) {    
     //  <li> container to hold the user task
-    let taskContainerEl = $("<ul>").addClass("taskItem d-flex flex-row");
+    let taskContainerEl = $("<ul>").addClass("taskItem d-flex flex-row pb-2");
 
     // add an id to element
     taskContainerEl.attr("taskID", taskIdCounter);
