@@ -21,7 +21,7 @@
 
 ## :wave: Description: 
 <p> 
-Lineup is currently a simple yet working to-do list!
+Lineup is an application that allows users to create and add to a to-do list. Users can delete either one list item or all of them together. Additionally users are presented with the current date and active time.
 </p>
   
 ## :book: User Story:
