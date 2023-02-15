@@ -21,7 +21,12 @@
 
 ## :wave: Description: 
 <p> 
-Lineup is an application that allows users to create and add to a to-do list. Users can delete either one list item or all of them together. Additionally users are presented with the current date and active time.
+Lineup is an application that allows users to create and add to a to-do list. Users can delete either one list item or all of them together. Additionally users are presented with the current date and active time. Lineup was brought to life through Bootstrap, CSS, jQuery, and JavaScript. 
+
+This project was put together to practice and reinforce concepts that I've learned while at the same time creating a simple but usable application. Since the goal of this project was to improve, I decided to avoid using a CDN like momentJS and used JavaScript's Date object to collect both the time and date. 
+
+It's my hope this application helps you out in anyway possible. Happy Coding!
+
 </p>
   
 ## :book: User Story:
@@ -30,7 +35,7 @@ Lineup is an application that allows users to create and add to a to-do list. Us
 Main Resources:
 - HTML
 - CSS
-- Bootstrap 4
+- Bootstrap 5.3.0
 - JavaScript
 - jQuery
 
