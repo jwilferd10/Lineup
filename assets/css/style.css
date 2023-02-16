@@ -3,6 +3,26 @@ body {
     font-family: 'Alegreya', serif;
 }
 
+#circularBtn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    display:flex;
+    justify-content: center;
+}
+
+#gitHubBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    padding: 1px;
+}
+
+#gitHubImg {
+    margin-top: 1px;
+}
+
 .taskItem {
     gap: 10px;
 }
