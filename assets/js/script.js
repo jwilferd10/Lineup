@@ -137,6 +137,8 @@ $(document).on('click', '.deleteBtn', function(taskObj) {
 
 // Function - deleteAllBtn
 $("#delAllTasks").click(function(event) {
+    event.preventDefault();
+    
     // Clear the tasks array
     tasks = [];
 
@@ -144,7 +146,9 @@ $("#delAllTasks").click(function(event) {
     localStorage.clear();
 
     // alert user
-    window.alert("All tasks have been deleted!");
+    $('#deleteAllConfirmModal').modal('show');
+    
+    // window.alert("All tasks have been deleted!");
 }); 
 
 ///////////////////////////////////
