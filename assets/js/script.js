@@ -146,8 +146,8 @@ $("#delAllTasks").click(function(event) {
     localStorage.clear();
 
     // alert user
-    $('#deleteAllConfirmModal').modal('show');
-    
+    // $('#deleteAllConfirmModal').modal('show');
+
     // window.alert("All tasks have been deleted!");
 }); 
 
