@@ -135,8 +135,8 @@ $(document).on('click', '.deleteBtn', function(taskObj) {
 
 ///////////////////////////////////
 
-// Function - deleteAllBtn
-$("#delAllTasks").click(function(event) {
+// Function - deleteAllBtn (connected to popup modal)
+$(".deleteAllBtn").click(function(event) {
     event.preventDefault();
     
     // Clear the tasks array
@@ -144,9 +144,6 @@ $("#delAllTasks").click(function(event) {
 
     // clear the localStorage 
     localStorage.clear();
-
-    // alert user
-    // $('#deleteAllConfirmModal').modal('show');
 
     // window.alert("All tasks have been deleted!");
 }); 
