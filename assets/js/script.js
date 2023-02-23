@@ -145,6 +145,9 @@ $(".deleteAllBtn").click(function(event) {
     // clear the localStorage 
     localStorage.clear();
 
+    // find and delete html elemenet 
+    $("ul").html("");
+
     // window.alert("All tasks have been deleted!");
 }); 
 
