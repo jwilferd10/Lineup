@@ -30,6 +30,19 @@ It's my hope this application helps you out in anyway possible. Happy Coding!
 </p>
   
 ## :book: User Story:
+**AS A user with a busy day**
+- I WANT a To-Do List Application 
+- SO THAT I can keep on top of my list
+
+**GIVEN I need a To-Do List**
+- WHEN I open the app
+	- THEN I am presented with a form and a list
+- WHEN I enter my task
+	- THEN my list updates with said task
+- WHEN I delete a single task
+	- THEN that task is removed from the list
+- WHEN I delete all tasks
+	- THEN my list becomes clear 
 
 ## :floppy_disk: Resources Used:
 Main Resources:
