@@ -77,6 +77,11 @@ body {
     transform: scale(0.5)
 }
 
+.c8 {
+    animation: animatedClouds 26s linear infinite;
+    transform: scale(0.45);
+}
+
 .cloud {
    background: white; 
    background: linear-gradient(top, white 5%, #f1f1f1 100%);
