@@ -119,7 +119,7 @@ body {
 /* cloud animation frames */
 @keyframes animatedClouds {
     0% {
-        margin-left: -1000px;
+        margin-left: -1500px;
     }
     100% {
         margin-left: 100%;
