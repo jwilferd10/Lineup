@@ -19,13 +19,11 @@ let timeInit = function() {
 
 // collect and present the current date
 $(document).ready(function() {
-    // get the current date
-    let currentDate = new Date().toDateString();
+    // get the current date & format it
+    let currentDate = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
     // display date
     $(".dateDisplay").html(currentDate);
-
-    // Potentially add comma after the days date before year
 });
 
 ///////////////////////////////////
