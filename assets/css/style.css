@@ -23,6 +23,10 @@ body {
     margin-top: 1px;
 }
 
+#taskList {
+    margin-right: 20px !important;
+}
+
 .taskItem {
     gap: 10px;
 }
