@@ -23,6 +23,11 @@ body {
     margin-top: 1px;
 }
 
+#userInput {
+    background: transparent;
+    border-color: black;
+}
+
 #taskList {
     margin-right: 20px !important;
 }
