@@ -23,6 +23,10 @@ body {
     margin-top: 1px;
 }
 
+.border {
+    background: rgb(255 255 255 / 30%);
+}
+
 .linedHeader{
     padding-bottom: 8px;
     /* reminder to media query this */
