@@ -1,6 +1,7 @@
 body {
-    background-color: #2fc0fe;
+    background: linear-gradient(rgb(82 138 195), #2fc0fe);
     font-family: 'Alegreya', serif;
+    background-attachment: fixed;
 }
 
 #circularBtn {
