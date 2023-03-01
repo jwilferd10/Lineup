@@ -106,8 +106,8 @@ body {
 }
 
 .cloud {
-   background: white; 
-   background: linear-gradient(top, white 5%, #f1f1f1 100%);
+   /* background: rgb(234, 234, 234);  */
+   background: linear-gradient(white 50%, #b9b9b9 100%);
    border-radius: 100px;
    box-shadow: 0 8px 5px rgba(0,0,0,0.1);
    height: 120px;
@@ -117,7 +117,7 @@ body {
 
 .cloud:after, .cloud::before 
 {
-    background: white;
+    background: linear-gradient(to top, white 50%, #d8d8d8 100%);
     content: "";
     position: absolute;
     z-index: -1;
