@@ -1,10 +1,13 @@
 /* CSS Effects  */
+.clickAnimation {
+    transform: translate(-1px, -1px);
+}
+
 .clickAnimation:active {
-    transform: translate(0, 0) !important;
+    transform: translate(0, 0);
 }
 
 .glassEffect {
-    transform: translate(-1px, -1px);
     overflow: hidden;
 }
 
