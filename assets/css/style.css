@@ -42,6 +42,25 @@ body {
     border-color: black;
 }
 
+/* btns */
+.formBtn {
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+}
+
+#delAllTasks:hover {
+    border: 1px solid black;
+    background-color: #d94237;
+    color: white;
+}
+
+#addTask:hover {
+    border: 1px solid black;
+    background-color: #2cb61d;
+    color: white;
+}
+
 #taskList {
     margin-right: 20px !important;
 }
