@@ -1,3 +1,33 @@
+/* CSS Effects  */
+.clickAnimation:active {
+    transform: translate(0, 0) !important;
+}
+
+.glassEffect {
+    transform: translate(-1px, -1px);
+    overflow: hidden;
+}
+
+.glassEffect:after {
+    background: #fff ;
+    content: "";
+    height: 210px;
+    left: -6rem;
+    opacity: 0.15;
+    position: absolute;
+    top: -50px;
+    width: 50px;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: rotate(35deg);
+}
+
+.glassEffect:hover:after {
+    left: 97.5%;
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* End of Effects */
+
 body {
     background: linear-gradient(rgb(82 138 195), #2fc0fe);
     font-family: 'Alegreya', serif;
