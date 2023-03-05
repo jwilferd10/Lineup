@@ -116,8 +116,13 @@ $("#taskList").on("click", "span", function() {
 // after editing task recreate the span 
 $("#taskList").on("blur", "textarea", function() {
     // collect tasks current value
+    let taskText = $(this).val().trim();
 
-    // collect the taskID
+    // recreate the span element for editedTask
+    let editedTask = $("<span>").text(taskText).addClass("taskText border border-dark rounded col-10 clickAnimation glassEffect");
+
+    // replace the textarea with the span containing editedTask
+    $(this).replaceWith(editedTask);
 });
 
 ///////////////////////////////////
