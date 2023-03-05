@@ -1,3 +1,8 @@
+:root {
+    --primary: #2cb61d;
+    --secondary: #d94237;
+}
+
 /* CSS Effects  */
 .clickAnimation {
     transform: translate(-1px, -1px);
@@ -33,7 +38,6 @@
 .notifyUser {
     display: none;
     animation: blinkEffect 1s linear infinite;
-    color: #2cb61d;
     text-shadow: 1px 1px #000000;
     margin: 0px;
     font-size: 20px;
@@ -95,13 +99,13 @@ body {
 
 #delAllTasks:hover {
     border: 1px solid black;
-    background-color: #d94237;
+    background-color: var(--secondary);
     color: white;
 }
 
 #addTask:hover {
     border: 1px solid black;
-    background-color: #2cb61d;
+    background-color: var(--primary);
     color: white;
 }
 

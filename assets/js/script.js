@@ -49,7 +49,7 @@ $("#addTask").click(function(event) {
         // reset the form 
         userInput.value = "";
 
-        $(".notifyUser").text("Task successfully added!").show();
+        $(".notifyUser").text("Task successfully added!").css("color", "var(--primary)").show();
 
         setTimeout(setNotification, 3000);
 
