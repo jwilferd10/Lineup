@@ -48,10 +48,21 @@ $("#addTask").click(function(event) {
         
         // reset the form 
         userInput.value = "";
+
+        $(".notifyUser").show();
+
+        setTimeout(setNotification, 3000);
+
     } else if (userText === "") {
         window.alert("You need to type something down");
     }
 });
+
+///////////////////////////////////
+
+let setNotification = function() {
+    $(".notifyUser").hide();
+}
 
 ///////////////////////////////////
 

@@ -29,6 +29,12 @@
     transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+
+.notifyUser {
+    animation: blinkEffect 1.5s linear infinite;
+    color: #2cb61d;
+    text-shadow: 1px 1px #000000;
+}
 /* End of Effects */
 
 body {
@@ -74,6 +80,11 @@ body {
     background: transparent;
     border-color: black;
     box-shadow: 0px 1px 3px black;
+}
+
+/* Notifications */
+.notifyUser {
+    display: none;
 }
 
 /* btns */
@@ -201,5 +212,11 @@ body {
     }
     100% {
         margin-left: 100%;
+    }
+}
+
+@keyframes blinkEffect {
+    50% {
+        opacity: 0;;
     }
 }
