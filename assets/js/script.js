@@ -28,6 +28,13 @@ $(document).ready(function() {
 
 ///////////////////////////////////
 
+// toggle item visibility
+let setNotification = function() {
+    $(".notify").hide();
+}
+
+///////////////////////////////////
+
 // When the textField submit button is clicked
 $("#addTask").click(function(event) {
     event.preventDefault();
@@ -57,12 +64,6 @@ $("#addTask").click(function(event) {
         window.alert("You need to type something down");
     }
 });
-
-///////////////////////////////////
-
-let setNotification = function() {
-    $(".notify").hide();
-}
 
 ///////////////////////////////////
 
@@ -97,6 +98,13 @@ let createTaskEl = function(taskObj) {
     // save to localStorage
     saveTasks();
 };
+
+///////////////////////////////////
+
+// edit existing task
+$("#taskList").on("click", "span", function() {
+    console.log("I've been clicked");
+});
 
 ///////////////////////////////////
 
