@@ -34,14 +34,17 @@
     transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-
-.notifyUser {
+.hidden {
     display: none;
+}
+
+.notify {
     animation: blinkEffect 1s linear infinite;
     text-shadow: 1px 1px #000000;
     margin: 0px;
     font-size: 20px;
 }
+
 /* End of Effects */
 
 body {

@@ -61,7 +61,7 @@ $("#addTask").click(function(event) {
 ///////////////////////////////////
 
 let setNotification = function() {
-    $(".notifyUser").hide();
+    $(".notify").hide();
 }
 
 ///////////////////////////////////
@@ -139,6 +139,10 @@ $(document).on('click', '.deleteBtn', function(taskObj) {
     localStorage.setItem('tasks', JSON.stringify(tasks));
 
     console.log(tasks);
+
+    $("#listNotify").text("Task successfully removed!").css("color", "var(--secondary)").show();
+
+    setTimeout(setNotification, 3000);
     
 });
 
@@ -157,7 +161,9 @@ $(".deleteAllBtn").click(function(event) {
     // find and delete html elemenet 
     $("ul").html("");
 
-    // window.alert("All tasks have been deleted!");
+    $(".notifyUser").text("All tasks successfully deleted!").css("color", "var(--secondary)").show();
+
+    setTimeout(setNotification, 3000);
 }); 
 
 ///////////////////////////////////
