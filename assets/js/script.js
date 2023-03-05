@@ -103,7 +103,21 @@ let createTaskEl = function(taskObj) {
 
 // edit existing task
 $("#taskList").on("click", "span", function() {
-    console.log("I've been clicked");
+    // console.log("I've been clicked");
+
+    let taskText = $(this).text().trim();
+
+    let textInput = $("<textarea>").addClass("form-control").val(taskText);
+    $(this).replaceWith(textInput);
+
+    textInput.trigger("focus");
+});
+
+// after editing task recreate the span 
+$("#taskList").on("blur", "textarea", function() {
+    // collect tasks current value
+
+    // collect the taskID
 });
 
 ///////////////////////////////////
