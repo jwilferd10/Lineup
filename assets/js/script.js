@@ -70,7 +70,7 @@ $("#addTask").click(function(event) {
 // .val of textField dynamically generated in htmlEl
 let createTaskEl = function(taskObj) {    
     //  <li> container to hold the user task
-    let taskContainerEl = $("<ul>").addClass("taskItem d-flex flex-row pb-2");
+    let taskContainerEl = $("<li>").addClass("taskItem d-flex flex-row pb-2");
 
     // add an id to element
     taskContainerEl.attr("taskID", taskIdCounter);
@@ -113,16 +113,35 @@ $("#taskList").on("click", "span", function() {
     textInput.trigger("focus");
 });
 
+///////////////////////////////////
+
 // after editing task recreate the span 
 $("#taskList").on("blur", "textarea", function() {
+    
     // collect tasks current value
     let taskText = $(this).val().trim();
 
+    // collect the index of taskItem undergoing edit
+    let index = $(this).closest(".taskItem").index();
+
+    // the text of said index will be replaced by value of taskText 
+    tasks[index].text = taskText;
+
     // recreate the span element for editedTask
-    let editedTask = $("<span>").text(taskText).addClass("taskText border border-dark rounded col-10 clickAnimation glassEffect");
+    let editedTask = $("<span>").addClass("taskText border border-dark rounded col-10 clickAnimation glassEffect").text(taskText);
 
     // replace the textarea with the span containing editedTask
     $(this).replaceWith(editedTask);
+
+    // console.log(tasks);
+
+    // notify user of success
+    $("#listNotify").text("Task successfully edited!").css("color", "var(--primary)").show();
+
+    setTimeout(setNotification, 1000);
+
+    // save changes
+    saveTasks();
 });
 
 ///////////////////////////////////
