@@ -107,10 +107,12 @@ $("#taskList").on("click", "span", function() {
 
     let taskText = $(this).text().trim();
 
-    let textInput = $("<textarea>").addClass("form-control").val(taskText);
+    let textInput = $("<textarea>").addClass("form-control listForm").val(taskText);
     $(this).replaceWith(textInput);
 
     textInput.trigger("focus");
+
+    debugger;
 });
 
 ///////////////////////////////////
@@ -132,8 +134,6 @@ $("#taskList").on("blur", "textarea", function() {
 
     // replace the textarea with the span containing editedTask
     $(this).replaceWith(editedTask);
-
-    // console.log(tasks);
 
     // if editedTask is working
     if(editedTask) {
@@ -182,7 +182,7 @@ let loadTasks = function() {
 $(document).on('click', '.deleteBtn', function(taskObj) {
 
     // find and delete html elemenet 
-    let deleteEl = $(this).parent("ul").remove().attr("taskID");
+    let deleteEl = $(this).parent("li").remove().attr("taskID");
 
     // deletes the task from the array 
     tasks.splice(deleteEl, 1);
