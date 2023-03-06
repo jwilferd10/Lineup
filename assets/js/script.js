@@ -103,7 +103,6 @@ let createTaskEl = function(taskObj) {
 
 // edit existing task
 $("#taskList").on("click", "span", function() {
-    // console.log("I've been clicked");
 
     let taskText = $(this).text().trim();
 
@@ -111,8 +110,6 @@ $("#taskList").on("click", "span", function() {
     $(this).replaceWith(textInput);
 
     textInput.trigger("focus");
-
-    debugger;
 });
 
 ///////////////////////////////////
@@ -189,8 +186,6 @@ $(document).on('click', '.deleteBtn', function(taskObj) {
 
     // using setItem to set it again with new task arr
     localStorage.setItem('tasks', JSON.stringify(tasks));
-
-    console.log(tasks);
 
     $("#listNotify").text("Task successfully removed!").css("color", "var(--secondary)").show();
 
