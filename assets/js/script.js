@@ -58,7 +58,7 @@ $("#addTask").click(function(event) {
 
         $(".notifyUser").text("Task successfully added!").css("color", "var(--primary)").show();
 
-        setTimeout(setNotification, 2000);
+        setTimeout(setNotification, 1000);
 
     } else if (userText === "") {
         window.alert("You need to type something down");
@@ -194,7 +194,7 @@ $(document).on('click', '.deleteBtn', function(taskObj) {
 
     $("#listNotify").text("Task successfully removed!").css("color", "var(--secondary)").show();
 
-    setTimeout(setNotification, 2000);
+    setTimeout(setNotification, 1000);
     
 });
 
@@ -215,7 +215,7 @@ $(".deleteAllBtn").click(function(event) {
 
     $(".notifyUser").text("All tasks successfully deleted!").css("color", "var(--secondary)").show();
 
-    setTimeout(setNotification, 2000);
+    setTimeout(setNotification, 1000);
 }); 
 
 ///////////////////////////////////

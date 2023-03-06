@@ -39,7 +39,7 @@
 }
 
 .notify {
-    animation: blinkEffect 1s linear infinite;
+    animation: blinkEffect 0.5s linear infinite;
     text-shadow: 1px 1px #000000;
     margin: 0px;
     font-size: 20px;
