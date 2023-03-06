@@ -135,11 +135,17 @@ $("#taskList").on("blur", "textarea", function() {
 
     // console.log(tasks);
 
-    // notify user of success
-    $("#listNotify").text("Task successfully edited!").css("color", "var(--primary)").show();
-
-    setTimeout(setNotification, 1000);
-
+    // if editedTask is working
+    if(editedTask) {
+        // notify user of success
+        $("#listNotify").text("Task successfully edited!").css("color", "var(--primary)").show();
+        setTimeout(setNotification, 1000);
+    } else {
+        // inform error
+        $("#listNotify").text("Something went wrong!").css("color", "var(--secondary)").show();
+        setTimeout(setNotification, 1000);
+    }
+    
     // save changes
     saveTasks();
 });
