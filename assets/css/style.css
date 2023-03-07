@@ -121,7 +121,8 @@ body {
 }
 
 .taskText {
-    padding-left:4px;
+    padding-left: 8px;
+    padding-top: 5px;
     box-shadow: 0px 1px 1px black;
     font-size: 17px;
     width: 83%;
@@ -131,6 +132,9 @@ body {
 .listForm {
     width: 83%;
     height: 35px;
+    background: transparent !important;
+    border-color: black !important;
+    box-shadow: 0px 1px 3px black !important;
 }
 
 /* clouds */

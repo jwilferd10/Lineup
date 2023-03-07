@@ -76,7 +76,7 @@ let createTaskEl = function(taskObj) {
     taskContainerEl.attr("taskID", taskIdCounter);
 
     // delete this task btn
-    let deleteBtn = $("<button>").addClass("deleteBtn btn pr-2 border-dark clickAnimation glassEffect delBtnStyle fa-solid fa-rectangle-xmark");
+    let deleteBtn = $("<button>").addClass("deleteBtn btn pr-2 border-dark clickAnimation glassEffect delBtnStyle fa-solid fa-rectangle-xmark fa-lg");
 
     // inside create a <span> element that contains userText.val();
     let taskTextEl = $("<span>").text(taskObj.text).addClass("taskText border border-dark rounded col-10 clickAnimation glassEffect");
@@ -110,6 +110,8 @@ $("#taskList").on("click", "span", function() {
     $(this).replaceWith(textInput);
 
     textInput.trigger("focus");
+
+    // debugger;
 });
 
 ///////////////////////////////////
