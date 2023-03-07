@@ -76,7 +76,7 @@ let createTaskEl = function(taskObj) {
     taskContainerEl.attr("taskID", taskIdCounter);
 
     // delete this task btn
-    let deleteBtn = $("<button>").addClass("deleteBtn btn btn-primary pr-2");
+    let deleteBtn = $("<button>").addClass("deleteBtn btn pr-2 border-dark clickAnimation glassEffect delBtnStyle fa-solid fa-rectangle-xmark");
 
     // inside create a <span> element that contains userText.val();
     let taskTextEl = $("<span>").text(taskObj.text).addClass("taskText border border-dark rounded col-10 clickAnimation glassEffect");
