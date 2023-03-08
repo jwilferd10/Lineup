@@ -47,6 +47,19 @@
 
 /* End of Effects */
 
+/* Modal Positioning */
+
+.modal-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 100%);
+}
+
+.fa-pen-to-square {
+    padding-right: 5px;
+}
+
 body {
     background: linear-gradient(rgb(82 138 195), #2fc0fe);
     font-family: 'Alegreya', serif;
