@@ -77,19 +77,39 @@
                 <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                    <h5 class="modal-title" id="deleteAllModalLabel">❗ Delete All Items?</h5>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
-                    <div class="modal-body text-center">
-                        Clicking confirm will permanently delete <b>all</b> items on the list, are you sure?
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="deleteAllBtn btn btn-danger" data-bs-dismiss="modal">Confirm</button>
+                        <h5 class="modal-title" id="deleteAllModalLabel"><i class="fa-solid fa-hand"></i> Delete All Items?</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body text-center">
+                            Clicking confirm will permanently delete <b>all</b> items on the list, are you sure?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="deleteAllBtn btn btn-danger" data-bs-dismiss="modal">Confirm</button>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Blank Form Reminder -->
+            <div class="modal fade" id="blankFormModal" tabindex="-1" role="dialog" aria-labelledby="blankFormModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="blankFormModalLabel"> <i class="fa-solid fa-pen-to-square"></i>Form Empty!</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body text-center">
+                            You need to fill out the form!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

@@ -61,7 +61,8 @@ $("#addTask").click(function(event) {
         setTimeout(setNotification, 1000);
 
     } else if (userText === "") {
-        window.alert("You need to type something down");
+        // window.alert("You need to type something down");.
+        $("#blankFormModal").modal("toggle");
     }
 });
 
