@@ -21,7 +21,8 @@
 </p>
 
 ## :movie_camera: Demo:
-
+![image](assets/img/LineupDesktop.gif)
+![image](assets/img/LineupMobile.gif)
 
 ## :wave: Description: 
 <p> 
@@ -61,7 +62,11 @@ Main Resources:
 ### Install:
 - You can do this by clicking the *GREEN* button above and you can download it by ZIP or copy the SSH!
 ### Usage:
-
+- Click on form entry
+- Enter task and hit ENTER or the Add Task button
+- Edit task by clicking on it
+- Delete single tasks by clicking the button to the left 
+- Delete all tasks by clicking designated button
 
 ## :paperclip: Contributors
 
