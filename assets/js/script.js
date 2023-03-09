@@ -110,8 +110,6 @@ $("#taskList").on("click", "span", function() {
     $(this).replaceWith(textInput);
 
     textInput.trigger("focus");
-
-    // debugger;
 });
 
 ///////////////////////////////////
