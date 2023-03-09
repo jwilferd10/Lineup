@@ -15,6 +15,10 @@
   - [Contact Information](#e-mail-contact-information)
 
 ## :camera: Preview:
+<p float="left">
+  <img src= "assets/img/LineupDesktop.png"  width="79%"/>
+  <img src= "assets/img/LineupMobile480px.png" width="20%"/>
+</p>
 
 ## :movie_camera: Demo:
 
