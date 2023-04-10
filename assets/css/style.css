@@ -139,6 +139,7 @@ body {
     font-size: 17px;
     width: 83%;
     height: 35px;
+    cursor: pointer;
 }
 
 .listForm {
